@@ -6,6 +6,11 @@
 img{
     width: 100%;
 }
+
+body{
+    margin: 100px;
+}
+
 h1{
     text-align: center;
 }
@@ -15,4 +20,7 @@ p{
 img{
     width: 300px;    
     padding: 50px;
+}
+.container{
+    border: 2px solid black;
 }
