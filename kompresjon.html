@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompresjon av bilder</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Kompresjon av bilder</h1>
+            <img src="" alt="">
+            <p>Medierfiler tar store plass i den tekologiske verden.
+                Video, lyd og bilder tar mye og vi må effektiv gjøre at ikke gjør det.
+                Da kommer kompresjon inn i bilder.
+                Kompresjon er at du gjør medie type mindre uten å ødelegge det.
+                Vi har to type kompresjon. Tapsfri kompresjon og destruktiv kompresjon.
+            </p>
+        </section>
+        <div>
+            <h3>Tapsfri kompresjon</h3>
+            <p>
+                Tapsfri kompresjon gjør bildepunktene mindre. Vanligvis vil bildepunktene stå i riktig rekkefølge med alle tallene ut. 
+                F.eks. (255, 255, 255), (255, 255, 255), (140, 98, 57), (140, 98, 57), (140, 98, 57), (140, 98, 57),  (255, 255, 255), (255, 255, 255).
+                (255, 255, 255) er hvit og (140, 98, 57) er brun. Det tapsfri kompresjon gjør at den ser hvor mange av samme farge det og skriver om bildepunktene. Her det 4 brun bildepunkter etter hver andre.
+                Da vil god blir skrevt om til 4, (140, 98, 57). Det samme kan også skje med selve talle. Hvit har det samme tallet 3 ganger vil det blir komprimert til (3, 255).
+                <br>
+                <br>
+                På denne måten vil mediefiler tar 1/3 mindre plass enn før og vi kan gjennskape bildene igjen med nesten 100% nøyaktighet.
+                Denne metoden kalles RTE (Run length encoding).
+                PCen må vite hva slags kompresjon som er brukt. Den bruker også litt tid på stokke tallen om riktig igjen. Dette kalles koding og dekoing. Selve systemt det bruker kalles kodek.
+
+            </p>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
