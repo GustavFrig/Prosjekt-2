@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kompresjon av bilder</title>
+    <link rel="stylesheet" href="kompresjon.css">
 </head>
 
 <body>
@@ -22,17 +23,20 @@
         <div>
             <h3>Tapsfri kompresjon</h3>
             <p>
-                Tapsfri kompresjon gjør bildepunktene mindre. Vanligvis vil bildepunktene stå i riktig rekkefølge med alle tallene ut. 
-                F.eks. (255, 255, 255), (255, 255, 255), (140, 98, 57), (140, 98, 57), (140, 98, 57), (140, 98, 57),  (255, 255, 255), (255, 255, 255).
-                (255, 255, 255) er hvit og (140, 98, 57) er brun. Det tapsfri kompresjon gjør at den ser hvor mange av samme farge det og skriver om bildepunktene. Her det 4 brun bildepunkter etter hver andre.
-                Da vil god blir skrevt om til 4, (140, 98, 57). Det samme kan også skje med selve talle. Hvit har det samme tallet 3 ganger vil det blir komprimert til (3, 255).
-                <br>
-                <br>
-                På denne måten vil mediefiler tar 1/3 mindre plass enn før og vi kan gjennskape bildene igjen med nesten 100% nøyaktighet.
-                Denne metoden kalles RTE (Run length encoding).
-                PCen må vite hva slags kompresjon som er brukt. Den bruker også litt tid på stokke tallen om riktig igjen. Dette kalles koding og dekoing. Selve systemt det bruker kalles kodek.
-
+                Tapsfri kompresjon reduserer mengden data ved å gjøre bildepunktene mer komprimerte. Vanligvis står bildepunktene i riktig rekkefølge med hver fargeverdi oppført. For eksempel: (255, 255, 255), (255, 255, 255), (140, 98, 57), (140, 98, 57), (140, 98, 57), (140, 98, 57), (255, 255, 255), (255, 255, 255).
+                Her representerer (255, 255, 255) hvit, og (140, 98, 57) representerer brun. Tapsfri kompresjon gjenkjenner når flere bildepunkter har samme farge og skriver dem om. Her er det for eksempel fire brune bildepunkter etter hverandre, som kan omskrives til 4, (140, 98, 57). Det samme kan også gjelde for tallene: Hvis hvit har samme verdi tre ganger, komprimeres det til (3, 255).
+                På denne måten tar mediefiler opptil en tredjedel mindre plass enn tidligere, og vi kan gjenopprette bildene med nesten 100 % nøyaktighet. Denne metoden kalles RLE (Run-Length Encoding).
             </p>
+            <img src="bilder_prosjekt2/lossy-compression.jpg" alt="Tapsfri kompresjon eksempel">
+        </div>
+        <div>
+            <h3>Destruktiv kompresjon</h3>
+            <p>
+                Tapsfri kompresjon fungerer bra når det er enkle og mange av de samme bildepunktene etter hverandre. Denne typen kompresjon fungerer derimot dårlig for bilder, fordi bilder ofte inneholder mange detaljer som gjør bildepunktene varierte. I stedet bruker vi destruktiv kompresjon.
+                Destruktiv kompresjon fører til noe tap av informasjon, men det bevarer nok til at bildet fortsatt kan gjenkjennes. Man kan ofte se forskjell på et komprimert og et ukomprimert bilde, der det komprimerte bildet vil være mindre tydelig, nesten som om pikslene er blitt større.
+                Denne metoden reduserer både lagringsplassen som kreves og bildekvaliteten.
+            </p>
+            <img src="bilder_prosjekt2/katt.jpg" alt="katt">
         </div>
 
     </main>
