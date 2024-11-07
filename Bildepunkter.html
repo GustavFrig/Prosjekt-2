@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="Bildepunkter.css">
+    <link rel="stylesheet" href="">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bildepunkter</title>
 </head>
+<style>
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    main {
+        justify-content: center;
+        background-color: #546A76;
+        border: 4px solid #4F5D75;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: 10px 10px 40px;
+        width: 500px;
+
+    }
+
+    .temanettside {
+        height: 100px;
+
+    }
+
+    .forsidelenke {
+        display: flex;
+        font-size: 50px;
+        text-decoration: none;
+        color: #4F5D75;
+    }
+
+    .forsidelenke:hover {
+        color: #546A76;
+
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #4F5D75;
+        border: 4px solid #546A76;
+    }
+    .navbar img {
+        width: 70px;
+    }
+</style>
+
 <body>
-    <h1>Bildepunkter</h1>
-    <h2>Et digitalt bilde er laget av små punkter som kalles piksler. Jo flere piksler et bilde har, desto bedre blir kvaliteten. Men flere piksler gjør også at bildet tar opp mer plass på datamaskinen.</h2>
-    <br>
-    <h2>Bilder blir digitalisert i en datamaskin. Ved å bruke et enkelt smilefjes som eksempel, deles bildet inn i små bildepunkter med to farger: svart og hvitt. Hvert bildepunkt representeres av et tall, hvor 1 står for svart og 0 for hvitt. Slik kan maskinen lage en digital versjon av bildet.</h2>
-    <img src="bilder_prosjekt2/piksler.jpg">
-    <h2>Datamaskinen kan gjenskape et bilde ved kun å bruke en tallrekke og informasjon om bildets struktur. I eksempelet her er bildet organisert som et rutenett med 8x8 punkter. Når maskinen vet dette, kan den bruke tallrekken til å gjenskape mønsteret i bildet.</h2>
+    <div>
+        <main>
+            <h1>Bildepunkter</h1>
+            <p>Et digitalt bilde er laget av små punkter som kalles piksler. Jo flere piksler et bilde har, desto bedre
+                blir
+                kvaliteten. Men flere piksler gjør også at bildet tar opp mer plass på datamaskinen.</p>
+            <br>
+            <p>Bilder blir digitalisert i en datamaskin. Ved å bruke et enkelt smilefjes som eksempel, deles bildet inn
+                i
+                små
+                bildepunkter med to farger: svart og hvitt. Hvert bildepunkt representeres av et tall, hvor 1 står for
+                svart
+                og 0
+                for hvitt. Slik kan maskinen lage en digital versjon av bildet.</p>
+            <img class="temanettside" src="bilder_prosjekt2/piksler.jpg">
+            <p>Datamaskinen kan gjenskape et bilde ved kun å bruke en tallrekke og informasjon om bildets struktur. I
+                eksempelet her er bildet organisert som et rutenett med 8x8 punkter. Når maskinen vet dette, kan den
+                bruke
+                tallrekken til å gjenskape mønsteret i bildet.</p>
+        </main>
+        <br>
+        <div class="navbar">
+            <a class="forsidelenke" href="index.html">🏠</a>
+            <a class="forsidelenke" href="LagringogMinne.html"><img src="bilder_prosjekt2/pil_høyre.png"></a>
+        </div>
+    </div>
 </body>
+
 </html>
