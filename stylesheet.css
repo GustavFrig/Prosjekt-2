@@ -12,5 +12,17 @@ img {
 body{
     font-family: "Lato", sans-serif;
     background-image: url(bilder_prosjekt2/bord.jpeg);
-    background-size: contain;    
+    background-size: contain; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+main {
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 10px 10px 40px;
+    width: 500px;
 }
