@@ -83,3 +83,54 @@ a{
     color: black;
 }
 
+@media (max-width: 700px) {
+    body {
+        flex-direction: column; 
+        padding: 10px; 
+    }
+
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .container {
+        margin: 10px; 
+        padding: 15px; 
+        width: 100%; 
+    }
+
+    main {
+        width: 100%; 
+        margin: 10px auto; 
+        padding: 15px; 
+        
+    }
+
+    .navbar {
+        flex-direction: column; 
+        padding: 10px;
+        margin-bottom: 15px; 
+       
+    }
+
+
+
+    .knapp {
+        padding: 6px 12px; 
+        font-size: 16px;
+        margin: 5px; 
+      
+    }
+
+   
+
+    .forsidelenke {
+        font-size: 40px; 
+    }
+
+    
+
+    .temanettside {
+        height: 80px; 
+    }
+}
