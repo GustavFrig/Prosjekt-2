@@ -12,7 +12,7 @@ img {
 body{
     font-family: "Lato", sans-serif;
     background-image: url(bilder_prosjekt2/bord.jpeg);
-    background-size: contain;  
+    background-size: cover;  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;  
