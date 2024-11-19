@@ -9,3 +9,14 @@
     justify-content: space-between;
     
 }
+.bitmapbilde {
+    padding: 30px;
+}
+
+h1 {
+    padding: 15px;
+    font-size: 35px;
+}
+p {
+    font-size: 15px;
+}
