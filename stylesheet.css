@@ -9,10 +9,11 @@ img {
     width: 100%;
 }
 
+
 body{
     font-family: "Lato", sans-serif;
     background-image: url(bilder_prosjekt2/bord.jpeg);
-    background-size: contain;  
+    background-size: cover;  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;  
@@ -56,11 +57,10 @@ main {
     margin-bottom: 25px;
     box-shadow: 10px 10px 40px;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
-.navbar img {
-    height: 50px;
-}
+
 .knapp{
     padding: 8px 14px;
     cursor: pointer;
@@ -83,3 +83,55 @@ a{
     color: black;
 }
 
+@media (max-width: 700px) {
+    body {
+        flex-direction: column; 
+        padding: 10px; 
+    }
+    
+
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .container {
+        margin: 10px; 
+        padding: 15px; 
+        width: 100%; 
+    }
+
+    main {
+        width: 100%; 
+        margin: 10px auto; 
+        padding: 15px; 
+        
+    }
+
+    .navbar {
+        flex-direction: column; 
+        padding: 10px;
+        margin-bottom: 15px; 
+       
+    }
+
+
+
+    .knapp {
+        padding: 6px 12px; 
+        font-size: 16px;
+        margin: 5px; 
+      
+    }
+
+   
+
+    .forsidelenke {
+        font-size: 40px; 
+    }
+
+    
+
+    .temanettside {
+        height: 80px; 
+    }
+}
