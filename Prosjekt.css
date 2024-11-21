@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,24 +9,13 @@
 img {
     width: 100%;
 }
-@media (max-width: 480px) {
-    .grid {
-        grid-template-columns: 1fr; /* 1 column on small screens (e.g., phones) */
-    }
-}
 
 
-:root {
-    --bakgrunnsfarge1: #546A76;
-    --alternativblå: #4F5D75;
-
-}
 
 body {
     margin: 100px;
     background-image: url(bilder_prosjekt2/bord.jpeg);
     background-size: contain;
-
 }
 
 h1 {
@@ -43,7 +34,7 @@ p {
     text-align: center;
 }
 
-div img{
+div img {
     width: 200px;
 }
 
@@ -58,7 +49,7 @@ div img:hover {
     padding: 50px;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
@@ -72,3 +63,41 @@ h3 {
 }
 
 
+@media (max-width: 700px) {
+    body {
+        margin: 20px;
+        
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    p {
+        margin: 20px;
+        font-size: 14px;
+    }
+
+    div img {
+        width: 150px;
+    }
+
+    .container {
+        padding: 20px;
+        box-shadow: 5px 5px 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+}

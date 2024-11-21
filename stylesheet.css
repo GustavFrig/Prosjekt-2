@@ -9,6 +9,11 @@ img {
     width: 100%;
 }
 
+:root {
+    --bakgrunnsfarge1:  #f2f2f2;
+    --border:  #f2f2f2;
+}
+
 
 body{
     font-family: "Lato", sans-serif;
@@ -21,8 +26,8 @@ body{
 
 main {
     justify-content: center;
-    background-color: #f2f2f2;
-    border: 4px solid #f2f2f2;
+    background-color: var(--bakgrunnsfarge1);
+    border: 4px solid var(--border);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -42,18 +47,18 @@ main {
     display: flex;
     font-size: 50px;
     text-decoration: none;
-    color: #4F5D75;
+    color: var(--bakgrunnsfarge1);
 }
 
 .forsidelenke:hover {
-    color: #546A76;
+    color: var(--bakgrunnsfarge1);
 
 }
 
 .navbar {
     display: flex;
-    background-color: #f2f2f2;
-    border: 4px solid #f2f2f2;
+    background-color: var(--bakgrunnsfarge1);
+    border: 4px solid var(--bakgrunnsfarge1);
     margin-bottom: 25px;
     box-shadow: 10px 10px 40px;
     justify-content: space-between;
@@ -90,9 +95,6 @@ a{
     }
     
 
-    .grid {
-        grid-template-columns: 1fr; 
-    }
 
     .container {
         margin: 10px; 
