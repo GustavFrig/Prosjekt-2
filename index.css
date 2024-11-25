@@ -93,8 +93,10 @@ h3 {
     }
 
     .grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     h3 {
